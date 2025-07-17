@@ -2,12 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sweet Shop Management</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Sweet Shop Management</h1>
-  <div id="app"></div>
+  <div id="app">
+    <form id="add-form">
+      <input type="text" id="name" placeholder="Name" required>
+      <select id="category" required title="Select Category">
+        <option value="">Select Category</option>
+        <option value="candy">Candy</option>
+        <option value="pastry">Pastry</option>
+      </select>
+      <input type="number" id="price" placeholder="Price" required>
+      <input type="number" id="quantity" placeholder="Quantity" required>
+      <button type="submit">Add Sweet</button>
+    </form>
+    <div id="sweet-list"></div>
+  </div>
   <script src="app.js"></script>
 </body>
 </html>

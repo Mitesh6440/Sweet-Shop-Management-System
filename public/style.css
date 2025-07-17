@@ -1,6 +1,118 @@
-body { font-family: Arial, sans-serif; background: #fffbe7; color: #333; }
-h1 { color: #b5651d; }
-#app { margin: 2em auto; max-width: 600px; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px #eee; }
-input, select, button { margin: 0.5em 0; padding: 0.5em; }
-.sweet-list { margin-top: 2em; }
-.sweet-item { border-bottom: 1px solid #eee; padding: 0.5em 0; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #f8fafc 0%, #ffe5ec 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #fff;
+  box-shadow: 0 2px 8px #f3c4c4;
+  padding: 1.5em 2em 1em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: #d72660;
+  margin-bottom: 0.5em;
+}
+#user-section {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px #f3c4c4;
+  padding: 2em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+section {
+  flex: 1 1 300px;
+  min-width: 300px;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+input, select, button {
+  padding: 0.6em;
+  border-radius: 6px;
+  border: 1px solid #e0aaff;
+  font-size: 1em;
+}
+button {
+  background: #d72660;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #a61e4d;
+}
+.sweet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.sweet-item {
+  display: flex;
+  background: #fff0f6;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #f3c4c4;
+  padding: 1em;
+  align-items: center;
+  gap: 1em;
+}
+.sweet-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #e0aaff;
+  background: #fff;
+}
+.sweet-info {
+  flex: 1;
+}
+.desc {
+  color: #6c757d;
+  font-size: 0.95em;
+}
+.alert {
+  color: #fff;
+  background: #d72660;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 1em;
+}
+#order-list {
+  list-style: none;
+  padding: 0;
+}
+#order-list li {
+  background: #f8fafc;
+  margin-bottom: 0.5em;
+  padding: 0.7em 1em;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px #f3c4c4;
+}
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    padding: 1em;
+  }
+  section {
+    min-width: unset;
+  }
+}

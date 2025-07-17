@@ -1,0 +1,6 @@
+body { font-family: Arial, sans-serif; background: #fffbe7; color: #333; }
+h1 { color: #b5651d; }
+#app { margin: 2em auto; max-width: 600px; background: #fff; padding: 2em; border-radius: 8px; box-shadow: 0 2px 8px #eee; }
+input, select, button { margin: 0.5em 0; padding: 0.5em; }
+.sweet-list { margin-top: 2em; }
+.sweet-item { border-bottom: 1px solid #eee; padding: 0.5em 0; }
